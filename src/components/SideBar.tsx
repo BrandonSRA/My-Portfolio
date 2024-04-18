@@ -141,7 +141,7 @@ export function SideBar() {
               sx={{
                 my: 3,
                 color: "white",
-                fontSize: { xs: "0.8rem", md: "0.8rem" },
+                fontSize: { xs: "0.6rem", md: "0.8rem" },
               }}
             >
               {page.component}

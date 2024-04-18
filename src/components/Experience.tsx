@@ -70,15 +70,15 @@ export function Experience() {
                 sx={{
                   color: "#ffff",
                   fontWeight: "700",
-                  fontSize: { xs: "2rem", md: "2.5rem" },
+                  fontSize: { xs: "1.5rem", md: "2.5rem" },
                   lineHeight: "1",
                 }}
               >
                 Skills & Experience
               </DialogTitle>
               <Typography
-                paddingLeft="50rem"
-                paddingRight="50rem"
+                paddingLeft="53rem"
+                paddingRight="53rem"
                 pb="3rem"
                 color="#A7A7A7"
                 fontWeight="400"
@@ -116,7 +116,7 @@ export function Experience() {
                 sx={{
                   color: "#ffff",
                   fontWeight: "700",
-                  fontSize: { xs: "2rem", md: "2.5rem" },
+                  fontSize: { xs: "1.5rem", md: "2.5rem" },
 
                   lineHeight: "1",
                 }}
@@ -128,8 +128,8 @@ export function Experience() {
                 color="#A7A7A7"
                 fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
-                paddingLeft="50rem"
-                paddingRight="50rem"
+                paddingLeft="53rem"
+                paddingRight="53rem"
                 pb={3}
               >
                 Some of my responsabilities:
@@ -160,7 +160,7 @@ export function Experience() {
                 sx={{
                   color: "#ffff",
                   fontWeight: "700",
-                  fontSize: { xs: "2rem", md: "2.5rem" },
+                  fontSize: { xs: "1.5rem", md: "2.5rem" },
 
                   lineHeight: "1",
                 }}
@@ -172,8 +172,8 @@ export function Experience() {
                 color="#A7A7A7"
                 fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
-                paddingLeft="50rem"
-                paddingRight="50rem"
+                paddingLeft="53rem"
+                paddingRight="53rem"
               >
                 Some of my responsabilities:
                 <br />
@@ -196,7 +196,7 @@ export function Experience() {
                 sx={{
                   color: "#ffff",
                   fontWeight: "700",
-                  fontSize: { xs: "2rem", md: "2.5rem" },
+                  fontSize: { xs: "1.5rem", md: "2.5rem" },
 
                   lineHeight: "1",
                 }}
@@ -208,8 +208,8 @@ export function Experience() {
                 color="#A7A7A7"
                 fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
-                paddingLeft="50rem"
-                paddingRight="50rem"
+                paddingLeft="53rem"
+                paddingRight="53rem"
               >
                 Some of my responsabilities:
                 <br />

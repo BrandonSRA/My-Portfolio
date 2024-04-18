@@ -115,8 +115,8 @@ export function Projects() {
                 <Typography
                   color="#A7A7A7"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
-                  pl={{ xs: "50rem", md: "0" }}
-                  pr={{ xs: "50rem", md: "0" }}
+                  pl={{ xs: "53rem", md: "0" }}
+                  pr={{ xs: "53rem", md: "0" }}
                 >
                   It is a page based on a design created by the figma community
                   to improve the layout.
@@ -189,8 +189,8 @@ export function Projects() {
                 <Typography
                   color="#A7A7A7"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
-                  pl={{ xs: "50rem", md: "0" }}
-                  pr={{ xs: "50rem", md: "0" }}
+                  pl={{ xs: "53rem", md: "0" }}
+                  pr={{ xs: "53rem", md: "0" }}
                 >
                   This page is made after having seen a CSS course.
                 </Typography>
@@ -254,13 +254,13 @@ export function Projects() {
                     fontSize: { xs: "2rem", md: "2rem" },
                   }}
                 >
-                  Rick and Morty API.
+                  Rick and Morty 
                 </DialogTitle>
                 <Typography
                   color="#A7A7A7"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
-                  pl={{ xs: "50rem", md: "0" }}
-                  pr={{ xs: "50rem", md: "0" }}
+                  pl={{ xs: "53rem", md: "0" }}
+                  pr={{ xs: "53rem", md: "0" }}
                 >
                   This page consists of a list of characters from the Rick and
                   Morty series.
@@ -286,7 +286,7 @@ export function Projects() {
                     paddingLeft: "0",
                   }}
                 >
-                  Explore to Rick and Morty API.
+                  Explore to Rick and Morty
                 </Link>
               </Stack>
               <Link
@@ -326,13 +326,13 @@ export function Projects() {
                     fontSize: { xs: "2rem", md: "2rem" },
                   }}
                 >
-                  Music app star Solutions
+                  Music app 
                 </DialogTitle>
                 <Typography
                   color="#A7A7A7"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
-                  pl={{ xs: "50rem", md: "0" }}
-                  pr={{ xs: "50rem", md: "0" }}
+                  pl={{ xs: "53rem", md: "0" }}
+                  pr={{ xs: "53rem", md: "0" }}
                 >
                   This page consists of a list of singers that are added to the
                   table.
@@ -405,8 +405,8 @@ export function Projects() {
                 <Typography
                   color="#A7A7A7"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
-                  pl={{ xs: "50rem", md: "0" }}
-                  pr={{ xs: "50rem", md: "0" }}
+                  pl={{ xs: "53rem", md: "0" }}
+                  pr={{ xs: "53rem", md: "0" }}
                 >
                   It is a web platform where users can view cryptocurrency
                   information in real time,
@@ -477,8 +477,8 @@ export function Projects() {
                   textAlign={"left"}
                   color="#A7A7A7"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
-                  pl={{ xs: "50rem", md: "0" }}
-                  pr={{ xs: "50rem", md: "0" }}
+                  pl={{ xs: "53rem", md: "0" }}
+                  pr={{ xs: "53rem", md: "0" }}
                 >
                   It is a web platform focused on connecting international
                   students to swap AUD into COP or vice versa.
