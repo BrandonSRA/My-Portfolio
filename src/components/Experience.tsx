@@ -18,14 +18,23 @@ import {
 
 const GlobalStyle = createGlobalStyle`
 .carousel .control-next.control-arrow:before  {
-    border-width: 20px; 
-   
-    
+    border-width: 30px; 
+    @media (max-width: 1440px) {
+      padding-left: 20rem;
+    }
+    @media (min-width: 1441px) {
+      padding-left: 10rem;
+    }
   }
   .carousel .control-prev.control-arrow:before 
   {
-    border-width: 20px; 
-   
+    border-width: 30px; 
+    @media (max-width: 1440px) {
+      padding-right: 20rem;
+    }
+    @media (min-width: 1441px) {
+      padding-right: 10rem;
+    }
   }
 `;
 
@@ -47,7 +56,7 @@ export function Experience() {
           maxWidth: "100%",
         }}
       >
-        <ParticlesBg type="lines" bg={true} />
+        <ParticlesBg type="polygon" bg={true} />
         <SideBar />
         <Stack
           direction="column"
@@ -55,23 +64,25 @@ export function Experience() {
           alignItems="center"
           textAlign="center"
         >
-          <Carousel showThumbs={false} dynamicHeight  width={2000}>
+          <Carousel showThumbs={false} width={2000}>
             <Stack justifyContent="center" alignItems="center">
               <DialogTitle
                 sx={{
                   color: "#ffff",
                   fontWeight: "700",
-                  fontSize: "5rem",
+                  fontSize: { xs: "2rem", md: "2.5rem" },
                   lineHeight: "1",
                 }}
               >
                 Skills & Experience
               </DialogTitle>
               <Typography
-                padding="5rem"
+                paddingLeft="50rem"
+                paddingRight="50rem"
                 pb="3rem"
                 color="#A7A7A7"
-                fontSize="1.5rem"
+                fontWeight="400"
+                fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
               >
                 I have gained experience building personal projects for training
@@ -85,16 +96,16 @@ export function Experience() {
                 <br /> In back-end development I have experience in creating
                 REST APIs using Node, MySql, GraphQl.
               </Typography>
-              <Stack p={4} pt={0} direction="row" spacing={2}>
-                <SiHtml5 size="4em" color="#E34F26" />
-                <SiCss3 size="4em" color="#1572B6" />
-                <SiJavascript size="4em" color="#F7DF1E" />
-                <SiTypescript size="4em" color="#3178C6" />
-                <SiNextdotjs size="4em" color="#ffff" />
-                <SiReact size="4em" color="#61DAFB" />
-                <SiNodedotjs size="4em" color="#339933" />
-                <SiMysql size="4em" color="#4479A1" />
-                <SiGraphql size="4em" color="#E10098" />
+              <Stack p={3} pt={0} direction="row" spacing={{ xs: 1, md: 2 }}>
+                <SiHtml5 size="2em" color="#E34F26" />
+                <SiCss3 size="2em" color="#1572B6" />
+                <SiJavascript size="2em" color="#F7DF1E" />
+                <SiTypescript size="2em" color="#3178C6" />
+                <SiNextdotjs size="2em" color="#ffff" />
+                <SiReact size="2em" color="#61DAFB" />
+                <SiNodedotjs size="2em" color="#339933" />
+                <SiMysql size="2em" color="#4479A1" />
+                <SiGraphql size="2em" color="#E10098" />
               </Stack>
             </Stack>
             <Stack justifyContent="center" alignItems="center">
@@ -105,7 +116,8 @@ export function Experience() {
                 sx={{
                   color: "#ffff",
                   fontWeight: "700",
-                  fontSize: "5rem",
+                  fontSize: { xs: "2rem", md: "2.5rem" },
+
                   lineHeight: "1",
                 }}
               >
@@ -114,9 +126,11 @@ export function Experience() {
               </DialogTitle>
               <Typography
                 color="#A7A7A7"
-                fontSize="1.5rem"
+                fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
-                padding="5rem"
+                paddingLeft="50rem"
+                paddingRight="50rem"
+                pb={3}
               >
                 Some of my responsabilities:
                 <br />
@@ -146,7 +160,8 @@ export function Experience() {
                 sx={{
                   color: "#ffff",
                   fontWeight: "700",
-                  fontSize: "5rem",
+                  fontSize: { xs: "2rem", md: "2.5rem" },
+
                   lineHeight: "1",
                 }}
               >
@@ -155,9 +170,10 @@ export function Experience() {
               </DialogTitle>
               <Typography
                 color="#A7A7A7"
-                fontSize="1.5rem"
+                fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
-                padding="5rem"
+                paddingLeft="50rem"
+                paddingRight="50rem"
               >
                 Some of my responsabilities:
                 <br />
@@ -180,7 +196,8 @@ export function Experience() {
                 sx={{
                   color: "#ffff",
                   fontWeight: "700",
-                  fontSize: "5rem",
+                  fontSize: { xs: "2rem", md: "2.5rem" },
+
                   lineHeight: "1",
                 }}
               >
@@ -189,9 +206,10 @@ export function Experience() {
               </DialogTitle>
               <Typography
                 color="#A7A7A7"
-                fontSize="1.5rem"
+                fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
-                padding="5rem"
+                paddingLeft="50rem"
+                paddingRight="50rem"
               >
                 Some of my responsabilities:
                 <br />

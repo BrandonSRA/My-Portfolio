@@ -1,14 +1,12 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Backdrop from "@mui/material/Backdrop";
-import SpeedDial from "@mui/material/SpeedDial";
-import SpeedDialAction from "@mui/material/SpeedDialAction";
-import Avatar from "@mui/material/Avatar";
+import { Mail, WhatsApp } from "@mui/icons-material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { AppBar, Button } from "@mui/material";
-import { Link } from "@mui/material";
-import { Mail, WhatsApp } from "@mui/icons-material";
+import { AppBar, Button, Link } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import SpeedDial from "@mui/material/SpeedDial";
+import SpeedDialAction from "@mui/material/SpeedDialAction";
+import * as React from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -106,15 +104,11 @@ export function SideBar() {
   const handleClose = () => setOpen(false);
 
   return (
-    <AppBar
-      position="fixed"
-      sx={{ background: "#5e5e5e5", backdropFilter: "blur 12px" }}
-    >
-      <Box sx={{ height: 80, transform: "translateZ(0px)", flexGrow: 1 }}>
-        <Backdrop open={open} />
+    <AppBar position="fixed">
+      <Box sx={{ height: 70, transform: "translateZ(0px)", flexGrow: 1 }}>
         <SpeedDial
           ariaLabel="SpeedDial tooltip example"
-          sx={{ position: "absolute", top: 16, left: 16 }}
+          sx={{ position: "absolute", top: 7, left: 16 }}
           icon={
             <Avatar
               alt="User Avatar"
@@ -132,7 +126,6 @@ export function SideBar() {
               key={action.name}
               icon={action.icon}
               tooltipTitle={action.name}
-              tooltipOpen
               onClick={handleClose}
               tooltipPlacement="right"
             />
@@ -140,12 +133,16 @@ export function SideBar() {
         </SpeedDial>
         <Box
           justifyContent="center"
-          sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+          sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}
         >
           {pages.map((page) => (
             <Button
               key={page.name}
-              sx={{ my: 3, color: "white", display: "block" }}
+              sx={{
+                my: 3,
+                color: "white",
+                fontSize: { xs: "0.8rem", md: "0.8rem" },
+              }}
             >
               {page.component}
             </Button>

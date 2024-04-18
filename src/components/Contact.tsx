@@ -22,10 +22,19 @@ const actions = [
         to="https://github.com/BrandonSRA"
         style={{ color: "#a7a7a7" }}
       >
-        <GitHubIcon sx={{ fontSize: "5rem" }} />
+        <GitHubIcon sx={{ fontSize: "2rem" }} />
       </Link>
     ),
-    name: "GitHub",
+    name: (
+      <Link
+        component={RouterLink}
+        target="blank"
+        to="https://github.com/BrandonSRA"
+        style={{ color: "#a7a7a7", fontSize: "1rem" }}
+      >
+        GitHub
+      </Link>
+    ),
   },
   {
     icon: (
@@ -35,10 +44,19 @@ const actions = [
         to="https://www.linkedin.com/in/brandon-restrepo-alvarez-178baa241/"
         style={{ color: "#a7a7a7" }}
       >
-        <LinkedInIcon sx={{ fontSize: "5rem" }} />
+        <LinkedInIcon sx={{ fontSize: "2rem" }} />
       </Link>
     ),
-    name: "LinkedIn",
+    name: (
+      <Link
+        component={RouterLink}
+        target="blank"
+        to="https://www.linkedin.com/in/brandon-restrepo-alvarez-178baa241/"
+        style={{ color: "#a7a7a7", fontSize: "1rem" }}
+      >
+        Linkedin
+      </Link>
+    ),
   },
   {
     icon: (
@@ -48,10 +66,19 @@ const actions = [
         to="https://wa.link/qinbmd"
         style={{ color: "#a7a7a7" }}
       >
-        <WhatsApp sx={{ fontSize: "5rem" }} />
+        <WhatsApp sx={{ fontSize: "2rem" }} />
       </Link>
     ),
-    name: "Contact",
+    name: (
+      <Link
+        component={RouterLink}
+        target="blank"
+        to="https://wa.link/qinbmd"
+        style={{ color: "#a7a7a7", fontSize: "1rem" }}
+      >
+        Contact
+      </Link>
+    ),
   },
   {
     icon: (
@@ -61,10 +88,19 @@ const actions = [
         to="mailto:brandon33455@gmail.com"
         style={{ color: "#a7a7a7" }}
       >
-        <Mail sx={{ fontSize: "5rem" }} />
+        <Mail sx={{ fontSize: "2rem" }} />
       </Link>
     ),
-    name: "Email",
+    name: (
+      <Link
+        component={RouterLink}
+        target="blank"
+        to="mailto:brandon33455@gmail.com"
+        style={{ color: "#a7a7a7", fontSize: "1rem" }}
+      >
+        Mail
+      </Link>
+    ),
   },
 ];
 export function Contact() {
@@ -91,24 +127,26 @@ export function Contact() {
           justifyContent="center"
           alignItems="center"
           textAlign="center"
-          padding="5rem"
+         
         >
           <Stack justifyContent="center" alignItems="center">
             <DialogTitle
               sx={{
                 color: "#ffff",
                 fontWeight: "700",
-                fontSize: "5rem",
+                fontSize: { xs: "2rem", md: "3rem" },
                 lineHeight: "1",
               }}
             >
-              Contact Me.
+              Contact Me
             </DialogTitle>
             <Typography
               color="#fff"
-              fontSize="1.5rem"
+              fontSize={{ xs: "1rem", md: "1rem" }}
+              m={0}
               textAlign="center"
-              padding="3rem"
+              sx={{ textWrap: "balance" }}
+              pb="2rem"
             >
               Available for any remote job opportunity. Send me an email or
               contact me via instant message!
@@ -120,13 +158,11 @@ export function Contact() {
               alignItems="center"
               spacing={2}
             >
-              {actions.map((action) => (
-                <Tooltip key={action.name} title={action.name}>
+              {actions.map((action, index) => (
+                <Tooltip key={index} title={action.name}>
                   <Stack direction="column" alignItems="center">
                     {action.icon}
-                    <Typography fontSize="2rem" color="#181818">
-                      {action.name}
-                    </Typography>
+                    {action.name}
                   </Stack>
                 </Tooltip>
               ))}

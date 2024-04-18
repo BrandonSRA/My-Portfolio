@@ -48,7 +48,8 @@ export const GenerateTheme = createTheme({
       styleOverrides: {
         root: {
           backdropFilter: "blur(10px)",
-          backgroundColor: "rgba(15, 15, 15, 0.4)",
+          backgroundColor: "rgba(15, 15, 15, 0.2)",
+          boxShadow: "none",
         },
       },
     },

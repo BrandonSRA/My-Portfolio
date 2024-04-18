@@ -33,13 +33,17 @@ export function Home() {
               sx={{
                 color: "#ffff",
                 fontWeight: "700",
-                fontSize: "5rem",
+                fontSize: { xs: "4rem", md: "3rem" },
                 lineHeight: "1",
               }}
             >
               Brandon Restrepo.
             </DialogTitle>
-            <Typography color="#fff" fontSize="1.5rem" textAlign="center">
+            <Typography
+              color="#fff"
+              fontSize={{ xs: "1rem", md: "1rem" }}
+              textAlign="center"
+            >
               Technician in software analysis and development.
             </Typography>
           </Stack>

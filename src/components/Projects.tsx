@@ -20,14 +20,23 @@ import { SideBar } from "./SideBar";
 
 const GlobalStyle = createGlobalStyle`
 .carousel .control-next.control-arrow:before  {
-    border-width: 20px; 
-   
-    
+    border-width: 30px; 
+    @media (max-width: 1440px) {
+      padding-left: 20rem;
+    }
+    @media (min-width: 1441px) {
+      padding-left: 10rem;
+    }
   }
   .carousel .control-prev.control-arrow:before 
   {
-    border-width: 20px; 
-   
+    border-width: 30px; 
+    @media (max-width: 1440px) {
+      padding-right: 20rem;
+    }
+    @media (min-width: 1441px) {
+      padding-right: 10rem;
+    }
   }
 `;
 
@@ -63,7 +72,8 @@ export function Projects() {
                 sx={{
                   color: "#ffff",
                   fontWeight: "700",
-                  fontSize: "5rem",
+                  fontSize: { xs: "4rem", md: "2.5rem" },
+
                   lineHeight: "1",
                 }}
               >
@@ -73,20 +83,23 @@ export function Projects() {
                 padding="3rem"
                 pb="3rem"
                 color="#A7A7A7"
-                fontSize="1.5rem"
+                fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
               >
                 Here are some of the projects I have worked on.
               </Typography>
             </Stack>
             <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="left"
-              textAlign="left"
+              direction={{ xs: "column", md: "row" }}
+              justifyContent={{ xs: "left", md: "center" }}
+              alignItems={{ xs: "center", md: "left" }}
+              textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography
+                  color="#A7A7A7"
+                  fontSize={{ xs: "0.8rem", md: "1rem" }}
+                >
                   (Personal Project)
                 </Typography>
                 <DialogTitle
@@ -94,21 +107,31 @@ export function Projects() {
                     padding: "0",
                     color: "#ffff",
                     fontWeight: "700",
-                    fontSize: "3rem",
+                    fontSize: { xs: "2rem", md: "2rem" },
                   }}
                 >
                   Shadient.co
                 </DialogTitle>
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography
+                  color="#A7A7A7"
+                  fontSize={{ xs: "0.8rem", md: "0.8rem" }}
+                  pl={{ xs: "50rem", md: "0" }}
+                  pr={{ xs: "50rem", md: "0" }}
+                >
                   It is a page based on a design created by the figma community
                   to improve the layout.
                 </Typography>
-                <Stack direction="row" justifyContent="left" p={1} spacing={2}>
-                  <SiReact size="3em" color="#61DAFB" />
-                  <SiTypescript size="3em" color="#3178C6" />
-                  <SiFigma size="3em" color="#F24E1E" />
-                  <SiMui size="3em" color="#0081CB" />
-                  <SiVite size="3em" color="#646CFF" />
+                <Stack
+                  direction="row"
+                  justifyContent={{ xs: "center", md: "left" }}
+                  pt={1}
+                  spacing={{ xs: 1, md: 2 }}
+                >
+                  <SiReact size="2em" color="#61DAFB" />
+                  <SiTypescript size="2em" color="#3178C6" />
+                  <SiFigma size="2em" color="#F24E1E" />
+                  <SiMui size="2em" color="#0081CB" />
+                  <SiVite size="2em" color="#646CFF" />
                 </Stack>
                 <Link
                   component={RouterLink}
@@ -126,6 +149,10 @@ export function Projects() {
               </Stack>
               <Link
                 paddingBottom="3rem"
+                sx={{
+                  width: { xs: "40vh", md: "70vh" },
+                  marginLeft: { xs: "0", md: "3em" },
+                }}
                 component={RouterLink}
                 target="blank"
                 to="https://shadient-co.vercel.app"
@@ -135,17 +162,15 @@ export function Projects() {
                   alt="Shadient.co"
                   style={{
                     borderRadius: "1rem",
-                    marginLeft: "5rem",
-                    width: "70vh",
                   }}
                 />
               </Link>
             </Stack>
             <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="left"
-              textAlign="left"
+              direction={{ xs: "column", md: "row" }}
+              justifyContent={{ xs: "left", md: "center" }}
+              alignItems={{ xs: "center", md: "left" }}
+              textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
                 <Typography color="#A7A7A7" fontSize="1rem">
@@ -156,17 +181,27 @@ export function Projects() {
                     padding: "0",
                     color: "#ffff",
                     fontWeight: "700",
-                    fontSize: "3rem",
+                    fontSize: { xs: "2rem", md: "2rem" },
                   }}
                 >
                   CSS Course.
                 </DialogTitle>
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography
+                  color="#A7A7A7"
+                  fontSize={{ xs: "0.8rem", md: "0.8rem" }}
+                  pl={{ xs: "50rem", md: "0" }}
+                  pr={{ xs: "50rem", md: "0" }}
+                >
                   This page is made after having seen a CSS course.
                 </Typography>
-                <Stack direction="row" justifyContent="left" p={1} spacing={2}>
-                  <SiCss3 size="3em" color="#1572B6" />
-                  <SiHtml5 size="3em" color="#E34F26" />
+                <Stack
+                  direction="row"
+                  justifyContent={{ xs: "center", md: "left" }}
+                  p={1}
+                  spacing={{ xs: 1, md: 2 }}
+                >
+                  <SiCss3 size="2em" color="#1572B6" />
+                  <SiHtml5 size="2em" color="#E34F26" />
                 </Stack>
                 <Link
                   component={RouterLink}
@@ -184,6 +219,10 @@ export function Projects() {
               </Stack>
               <Link
                 paddingBottom="3rem"
+                sx={{
+                  width: { xs: "40vh", md: "70vh" },
+                  marginLeft: { xs: "0", md: "3em" },
+                }}
                 component={RouterLink}
                 target="blank"
                 to="https://brandonsra.github.io"
@@ -193,17 +232,15 @@ export function Projects() {
                   alt="Music app star Solutions"
                   style={{
                     borderRadius: "1rem",
-                    marginLeft: "5rem",
-                    width: "70vh",
                   }}
                 />
               </Link>
             </Stack>
             <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="left"
-              textAlign="left"
+              direction={{ xs: "column", md: "row" }}
+              justifyContent={{ xs: "left", md: "center" }}
+              alignItems={{ xs: "center", md: "left" }}
+              textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
                 <Typography color="#A7A7A7" fontSize="1rem">
@@ -214,19 +251,29 @@ export function Projects() {
                     padding: "0",
                     color: "#ffff",
                     fontWeight: "700",
-                    fontSize: "3rem",
+                    fontSize: { xs: "2rem", md: "2rem" },
                   }}
                 >
                   Rick and Morty API.
                 </DialogTitle>
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography
+                  color="#A7A7A7"
+                  fontSize={{ xs: "0.8rem", md: "0.8rem" }}
+                  pl={{ xs: "50rem", md: "0" }}
+                  pr={{ xs: "50rem", md: "0" }}
+                >
                   This page consists of a list of characters from the Rick and
                   Morty series.
                 </Typography>
-                <Stack direction="row" justifyContent="left" p={1} spacing={2}>
-                  <SiReact size="3em" color="#61DAFB" />
-                  <SiJavascript size="3em" color="#F7DF1E" />
-                  <SiCss3 size="3em" color="#1572B6" />
+                <Stack
+                  direction="row"
+                  justifyContent={{ xs: "center", md: "left" }}
+                  p={1}
+                  spacing={{ xs: 1, md: 2 }}
+                >
+                  <SiReact size="2em" color="#61DAFB" />
+                  <SiJavascript size="2em" color="#F7DF1E" />
+                  <SiCss3 size="2em" color="#1572B6" />
                 </Stack>
                 <Link
                   component={RouterLink}
@@ -244,6 +291,10 @@ export function Projects() {
               </Stack>
               <Link
                 paddingBottom="3rem"
+                sx={{
+                  width: { xs: "40vh", md: "70vh" },
+                  marginLeft: { xs: "0", md: "3em" },
+                }}
                 component={RouterLink}
                 target="blank"
                 to="https://rick-and-morty-app-github-4zd860dfh-brandons-projects-26e7450d.vercel.app"
@@ -253,17 +304,15 @@ export function Projects() {
                   alt="Music app star Solutions"
                   style={{
                     borderRadius: "1rem",
-                    marginLeft: "5rem",
-                    width: "70vh",
                   }}
                 />
               </Link>
             </Stack>
             <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="left"
-              textAlign="left"
+              direction={{ xs: "column", md: "row" }}
+              justifyContent={{ xs: "left", md: "center" }}
+              alignItems={{ xs: "center", md: "left" }}
+              textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
                 <Typography color="#A7A7A7" fontSize="1rem">
@@ -274,21 +323,31 @@ export function Projects() {
                     padding: "0",
                     color: "#ffff",
                     fontWeight: "700",
-                    fontSize: "3rem",
+                    fontSize: { xs: "2rem", md: "2rem" },
                   }}
                 >
                   Music app star Solutions
                 </DialogTitle>
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography
+                  color="#A7A7A7"
+                  fontSize={{ xs: "0.8rem", md: "0.8rem" }}
+                  pl={{ xs: "50rem", md: "0" }}
+                  pr={{ xs: "50rem", md: "0" }}
+                >
                   This page consists of a list of singers that are added to the
                   table.
                 </Typography>
-                <Stack direction="row" justifyContent="left" p={1} spacing={2}>
-                  <SiReact size="3em" color="#61DAFB" />
-                  <SiTypescript size="3em" color="#3178C6" />
-                  <SiNextdotjs size="3em" color="#ffff" />
-                  <SiGraphql size="3em" color="#E10098" />
-                  <SiMui size="3em" color="#0081CB" />
+                <Stack
+                  direction="row"
+                  justifyContent={{ xs: "center", md: "left" }}
+                  p={1}
+                  spacing={{ xs: 1, md: 2 }}
+                >
+                  <SiReact size="2em" color="#61DAFB" />
+                  <SiTypescript size="2em" color="#3178C6" />
+                  <SiNextdotjs size="2em" color="#ffff" />
+                  <SiGraphql size="2em" color="#E10098" />
+                  <SiMui size="2em" color="#0081CB" />
                 </Stack>
                 <Link
                   component={RouterLink}
@@ -307,6 +366,10 @@ export function Projects() {
               <Link
                 paddingBottom="3rem"
                 component={RouterLink}
+                sx={{
+                  width: { xs: "40vh", md: "70vh" },
+                  marginLeft: { xs: "0", md: "3em" },
+                }}
                 target="blank"
                 to="https://music-app-soluciones-star.vercel.app"
               >
@@ -315,17 +378,15 @@ export function Projects() {
                   alt="Music app star Solutions"
                   style={{
                     borderRadius: "1rem",
-                    marginLeft: "5rem",
-                    width: "70vh",
                   }}
                 />
               </Link>
             </Stack>
             <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="left"
-              textAlign="left"
+              direction={{ xs: "column", md: "row" }}
+              justifyContent={{ xs: "left", md: "center" }}
+              alignItems={{ xs: "center", md: "left" }}
+              textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
                 <Typography color="#A7A7A7" fontSize="1rem">
@@ -336,20 +397,30 @@ export function Projects() {
                     padding: "0",
                     color: "#ffff",
                     fontWeight: "700",
-                    fontSize: "3rem",
+                    fontSize: { xs: "2rem", md: "2rem" },
                   }}
                 >
                   TradesForce
                 </DialogTitle>
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography
+                  color="#A7A7A7"
+                  fontSize={{ xs: "0.8rem", md: "0.8rem" }}
+                  pl={{ xs: "50rem", md: "0" }}
+                  pr={{ xs: "50rem", md: "0" }}
+                >
                   It is a web platform where users can view cryptocurrency
                   information in real time,
                   <br /> with the possibility of modifying the information.
                 </Typography>
-                <Stack direction="row" justifyContent="left" p={1} spacing={2}>
-                  <SiReact size="3em" color="#61DAFB" />
-                  <SiMui size="3em" color="#0081CB" />
-                  <SiVite size="3em" color="#646CFF" />
+                <Stack
+                  direction="row"
+                  justifyContent={{ xs: "center", md: "left" }}
+                  p={1}
+                  spacing={{ xs: 1, md: 2 }}
+                >
+                  <SiReact size="2em" color="#61DAFB" />
+                  <SiMui size="2em" color="#0081CB" />
+                  <SiVite size="2em" color="#646CFF" />
                 </Stack>
                 <Link
                   component={RouterLink}
@@ -364,23 +435,29 @@ export function Projects() {
                   Explore to TradesForce
                 </Link>
               </Stack>
-              <Link paddingBottom="3rem" component={RouterLink} to="#">
+              <Link
+                paddingBottom="3rem"
+                sx={{
+                  width: { xs: "40vh", md: "70vh" },
+                  marginLeft: { xs: "0", md: "3em" },
+                }}
+                component={RouterLink}
+                to="#"
+              >
                 <img
                   src="TradesForce.png"
                   alt="TradesForce app"
                   style={{
                     borderRadius: "1rem",
-                    marginLeft: "5rem",
-                    width: "70vh",
                   }}
                 />
               </Link>
             </Stack>
             <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="left"
-              textAlign="left"
+              direction={{ xs: "column", md: "row" }}
+              justifyContent={{ xs: "left", md: "center" }}
+              alignItems={{ xs: "center", md: "left" }}
+              textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
                 <Typography color="#A7A7A7" fontSize="1rem">
@@ -391,21 +468,32 @@ export function Projects() {
                     padding: "0",
                     color: "#ffff",
                     fontWeight: "700",
-                    fontSize: "3rem",
+                    fontSize: { xs: "2rem", md: "2rem" },
                   }}
                 >
                   Bitnapse
                 </DialogTitle>
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography
+                  textAlign={"left"}
+                  color="#A7A7A7"
+                  fontSize={{ xs: "0.8rem", md: "0.8rem" }}
+                  pl={{ xs: "50rem", md: "0" }}
+                  pr={{ xs: "50rem", md: "0" }}
+                >
                   It is a web platform focused on connecting international
                   students to swap AUD into COP or vice versa.
                   <br /> The project aims to connect students and improve their
                   financial life.
                 </Typography>
-                <Stack direction="row" justifyContent="left" p={1} spacing={2}>
-                  <SiReact size="3em" color="#61DAFB" />
-                  <SiMui size="3em" color="#0081CB" />
-                  <SiVite size="3em" color="#646CFF" />
+                <Stack
+                  direction="row"
+                  justifyContent={{ xs: "center", md: "left" }}
+                  p={1}
+                  spacing={{ xs: 1, md: 2 }}
+                >
+                  <SiReact size="2em" color="#61DAFB" />
+                  <SiMui size="2em" color="#0081CB" />
+                  <SiVite size="2em" color="#646CFF" />
                 </Stack>
                 <Link
                   component={RouterLink}
@@ -423,6 +511,10 @@ export function Projects() {
               </Stack>
               <Link
                 paddingBottom="3rem"
+                sx={{
+                  width: { xs: "40vh", md: "70vh" },
+                  marginLeft: { xs: "0", md: "3em" },
+                }}
                 component={RouterLink}
                 target="blank"
                 to="https://bitnapse.au"
@@ -432,8 +524,6 @@ export function Projects() {
                   alt="Music app star Solutions"
                   style={{
                     borderRadius: "1rem",
-                    marginLeft: "5rem",
-                    width: "70vh",
                   }}
                 />
               </Link>
