@@ -82,7 +82,7 @@ export function Projects() {
               <Typography
                 padding="3rem"
                 pb="3rem"
-                color="#A7A7A7"
+                color="#ffff"
                 fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
               >
@@ -97,7 +97,7 @@ export function Projects() {
             >
               <Stack justifyContent="center">
                 <Typography
-                  color="#A7A7A7"
+                  color="#b3b3b3"
                   fontSize={{ xs: "0.8rem", md: "1rem" }}
                 >
                   (Personal Project)
@@ -113,7 +113,7 @@ export function Projects() {
                   Shadient.co
                 </DialogTitle>
                 <Typography
-                  color="#A7A7A7"
+                  color="#ffff"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
                   pl={{ xs: "53rem", md: "0" }}
                   pr={{ xs: "53rem", md: "0" }}
@@ -173,7 +173,7 @@ export function Projects() {
               textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography color="#b3b3b3" fontSize="1rem">
                   (Personal Project)
                 </Typography>
                 <DialogTitle
@@ -187,7 +187,7 @@ export function Projects() {
                   CSS Course.
                 </DialogTitle>
                 <Typography
-                  color="#A7A7A7"
+                  color="#ffff"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
                   pl={{ xs: "53rem", md: "0" }}
                   pr={{ xs: "53rem", md: "0" }}
@@ -243,7 +243,7 @@ export function Projects() {
               textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography color="#b3b3b3" fontSize="1rem">
                   (Personal Project)
                 </Typography>
                 <DialogTitle
@@ -257,7 +257,7 @@ export function Projects() {
                   Rick and Morty 
                 </DialogTitle>
                 <Typography
-                  color="#A7A7A7"
+                  color="#ffff"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
                   pl={{ xs: "53rem", md: "0" }}
                   pr={{ xs: "53rem", md: "0" }}
@@ -315,7 +315,7 @@ export function Projects() {
               textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography color="#b3b3b3" fontSize="1rem">
                   (Personal Project)
                 </Typography>
                 <DialogTitle
@@ -329,7 +329,7 @@ export function Projects() {
                   Music app 
                 </DialogTitle>
                 <Typography
-                  color="#A7A7A7"
+                  color="#ffff"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
                   pl={{ xs: "53rem", md: "0" }}
                   pr={{ xs: "53rem", md: "0" }}
@@ -389,7 +389,7 @@ export function Projects() {
               textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography color="#b3b3b3" fontSize="1rem">
                   (Star Solutions)
                 </Typography>
                 <DialogTitle
@@ -403,7 +403,7 @@ export function Projects() {
                   TradesForce
                 </DialogTitle>
                 <Typography
-                  color="#A7A7A7"
+                  color="#ffff"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
                   pl={{ xs: "53rem", md: "0" }}
                   pr={{ xs: "53rem", md: "0" }}
@@ -460,7 +460,7 @@ export function Projects() {
               textAlign={{ xs: "center", md: "left" }}
             >
               <Stack justifyContent="center">
-                <Typography color="#A7A7A7" fontSize="1rem">
+                <Typography color="#b3b3b3" fontSize="1rem">
                   (Star Solutions)
                 </Typography>
                 <DialogTitle
@@ -475,7 +475,7 @@ export function Projects() {
                 </DialogTitle>
                 <Typography
                   textAlign={"left"}
-                  color="#A7A7A7"
+                  color="#ffff"
                   fontSize={{ xs: "0.8rem", md: "0.8rem" }}
                   pl={{ xs: "53rem", md: "0" }}
                   pr={{ xs: "53rem", md: "0" }}

@@ -80,7 +80,7 @@ export function Experience() {
                 paddingLeft="53rem"
                 paddingRight="53rem"
                 pb="3rem"
-                color="#A7A7A7"
+                color="#ffff"
                 fontWeight="400"
                 fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
@@ -109,7 +109,7 @@ export function Experience() {
               </Stack>
             </Stack>
             <Stack justifyContent="center" alignItems="center">
-              <Typography color="#A7A7A7" fontSize="1.5rem" textAlign="left">
+              <Typography color="#b3b3b3" fontSize="1.5rem" textAlign="left">
                 (fullstack developer)
               </Typography>
               <DialogTitle
@@ -125,7 +125,7 @@ export function Experience() {
                 <br /> Colombia
               </DialogTitle>
               <Typography
-                color="#A7A7A7"
+                color="#ffff"
                 fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
                 paddingLeft="53rem"
@@ -153,7 +153,7 @@ export function Experience() {
               </Typography>
             </Stack>
             <Stack justifyContent="center" alignItems="center">
-              <Typography color="#A7A7A7" fontSize="1.5rem" textAlign="left">
+              <Typography color="#b3b3b3" fontSize="1.5rem" textAlign="left">
                 (fullStack hotbed)
               </Typography>
               <DialogTitle
@@ -169,7 +169,7 @@ export function Experience() {
                 <br /> Colombia
               </DialogTitle>
               <Typography
-                color="#A7A7A7"
+                color="#ffff"
                 fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
                 paddingLeft="53rem"
@@ -189,7 +189,7 @@ export function Experience() {
               </Typography>
             </Stack>
             <Stack justifyContent="center" alignItems="center">
-              <Typography color="#A7A7A7" fontSize="1.5rem" textAlign="left">
+              <Typography color="#b3b3b3" fontSize="1.5rem" textAlign="left">
                 (Technical Practices)
               </Typography>
               <DialogTitle
@@ -205,7 +205,7 @@ export function Experience() {
                 <br /> Colombia
               </DialogTitle>
               <Typography
-                color="#A7A7A7"
+                color="#ffff"
                 fontSize={{ xs: "1rem", md: "1rem" }}
                 textAlign="left"
                 paddingLeft="53rem"
