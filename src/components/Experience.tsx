@@ -1,10 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Container, DialogTitle, Stack, Typography, useMediaQuery } from "@mui/material";
+import { Container, DialogTitle, Stack, Typography } from "@mui/material";
 import { SideBar } from "./SideBar";
 import ParticlesBg from "particles-bg";
-
 import {
   SiHtml5,
   SiCss3,
@@ -39,8 +38,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const isMobile = useMediaQuery("(max-width:600px)");
-
 export function Experience() {
   return (
     <>
@@ -67,7 +64,7 @@ export function Experience() {
           alignItems="center"
           textAlign="center"
         >
-          <Carousel showThumbs={false} swipeable={!isMobile} width={2000}>
+          <Carousel showThumbs={false} width={2000}>
             <Stack justifyContent="center" alignItems="center">
               <DialogTitle
                 sx={{
