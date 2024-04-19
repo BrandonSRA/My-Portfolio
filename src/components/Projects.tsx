@@ -1,4 +1,4 @@
-import { Container, DialogTitle, Link, Stack, Typography } from "@mui/material";
+import { Container, DialogTitle, Link, Stack, Typography, useMediaQuery } from "@mui/material";
 import ParticlesBg from "particles-bg";
 import {
   SiCss3,
@@ -39,6 +39,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 `;
+const isMobile = useMediaQuery('(max-width:600px)');
 
 export function Projects() {
   return (
@@ -66,7 +67,7 @@ export function Projects() {
           alignItems="center"
           textAlign="center"
         >
-          <Carousel showThumbs={false} width={2000}>
+          <Carousel showThumbs={false} swipeable={!isMobile} width={2000}>
             <Stack justifyContent="center" alignItems="center">
               <DialogTitle
                 sx={{
